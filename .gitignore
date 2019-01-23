@@ -1,0 +1,5 @@
+venv/
+*.db
+*.iml
+__pycache__/
+

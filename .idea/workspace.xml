@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a38d49c2-c2da-48cf-990b-4004d8b3b665" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon29x29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon50x50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon50x50@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon57x57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon57x57@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon72x72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon72x72@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon76x76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/AppIcon76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/background_1.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/background_1.imageset/background_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/btn_settings.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Assets.xcassets/btn_settings.imageset/btn_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/ItemDetailViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/ItemListTableView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/ItemListTableViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/Navigation.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/PumpkinVraClasses.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/UserPreferencesViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/ViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__cglib_cglib_nodep_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_github_jknack_semver_java_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_rubiconproject_oss_jchronic_0_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_app_settings_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_dbinstaller_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_model_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_plugin_modeldriven_generator_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_plugin_modeldriven_runtime_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_plugin_tools_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_sdkapi_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_sdkapi_vmware_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_security_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_settings_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_spring_tools_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__com_vmware_o11n_o11n_util_7_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_discovery_commons_discovery_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__net_sf_saxon_saxon_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__ognl_ognl_2_6_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_commons_commons_vfs2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_lucene_lucene_core_6_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_api_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_svn_commons_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_svnexe_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_santuario_xmlsec_1_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_xmlpublic_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_xpath_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_1_0_alpha_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_1_5_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_freemarker_freemarker_2_3_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_javassist_javassist_3_18_2_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_reflections_reflections_0_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_aop_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_beans_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_context_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_core_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_expression_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_orm_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_tx_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_web_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__regexp_regexp_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/corp.local.reddis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis-core/o11nplugin-corp.local.reddis-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis-core/src/main/java/corp/local/reddis/singleton/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis-custom/o11nplugin-corp.local.reddis-custom.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis-gen/o11nplugin-corp.local.reddis-gen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis-package/o11nplugin-corp.local.reddis-package.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../corp.local.reddis/o11nplugin-corp.local.reddis/o11nplugin-corp.local.reddis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../custom-hostname" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Podfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/AFError.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Alamofire.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/MultipartFormData.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/NetworkReachabilityManager.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Notifications.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/ParameterEncoding.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Request.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Response.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/ResponseSerialization.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Result.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/ServerTrustPolicy.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/SessionDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/SessionManager.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/TaskDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Timeline.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Alamofire/Source/Validation.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Manifest.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/Alamofire.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/Pods-dispatchGroups.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/PromiseKit.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/SwiftyJSON.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Pods.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSObject+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSTask+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSTask+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSURLSession+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSURLSession+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/NSURLSession+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/PMKFoundation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/Process+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/URLDataPromise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/Foundation/Sources/afterlife.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/QuartzCore/Sources/CALayer+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/QuartzCore/Sources/CALayer+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/QuartzCore/Sources/PMKQuartzCore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/PMKAlertController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/PMKUIKit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIView+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIView+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIView+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIViewController+AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIViewController+AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Extensions/UIKit/Sources/UIViewController+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/AnyPromise+Private.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/AnyPromise.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/AnyPromise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/AnyPromise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/DispatchQueue+Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/Error.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/GlobalState.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/NSMethodSignatureForBlock.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/PMKCallVariadicBlock.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/Promise+AnyPromise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/Promise+Properties.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/Promise.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/PromiseKit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/State.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/Zalgo.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/after.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/after.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/dispatch_promise.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/fwd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/hang.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/join.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/join.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/race.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/when.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/when.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/PromiseKit/Sources/wrap.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/SwiftyJSON/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/SwiftyJSON/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/SwiftyJSON/Source/SwiftyJSON.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Alamofire.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Alamofire/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-acknowledgements.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-acknowledgements.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-frameworks.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-resources.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups-umbrella.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups.debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/Pods-dispatchGroups/Pods-dispatchGroups.release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/PromiseKit-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/PromiseKit-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/PromiseKit-umbrella.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/PromiseKit.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/PromiseKit/PromiseKit.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-dummy.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/SwiftyJSON.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/Pods/Target Support Files/SwiftyJSON/SwiftyJSON.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcodeproj/project.xcworkspace/xcuserdata/dgertsch.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/dispatchGroups.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcodeproj/xcuserdata/dgertsch.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcworkspace/xcuserdata/dgertsch.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups.xcworkspace/xcuserdata/dgertsch.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/APIClass.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dispatchGroups/dispatchGroups/ViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myPromiseKit/myPromiseKit/APIManager.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myPromiseKit/myPromiseKit/DataModel.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myPromiseKit2/myPromiseKit2/APIManager.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myPromiseKit2/myPromiseKit2/DataModel.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nvipam-flask-v2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nvipam-flask-v2/database/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nvipam-flask-v2/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nvipam-flask-v2/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../otech" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../platypus" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../public-cloud-center" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/background_1.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/background_1.imageset/background_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/icons8-Save-40.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/icons8-Save-40.imageset/icons8-Save-40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/icons8-Settings-50.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Assets.xcassets/icons8-Settings-50.imageset/icons8-Settings-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/ItemDetailTableViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/ItemListTableViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pumpkin-swift2/pumpkin-swift2/ViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../replace_vra_services_icon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/InitialViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/ItemDetailTableViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/ItemDetailViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/ItemViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swiftKeystoreDefaults/swiftKeystoreDefaults/ItemsViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vraiconpack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vro-change-owner/Change Owner V2.workflow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../windows-dns" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1916127072">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="flaskenv" value="1" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="9" />
+          <entry key="flaskenv" value="18" />
+          <entry key="py" value="708" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="Python" value="708" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <marker date="1548265380675" expanded="true" signature="451:456" ph="..." />
+                <marker date="1548265380675" expanded="true" signature="557:562" ph="..." />
+                <marker date="1548265380675" expanded="true" signature="581:590" ph="..." />
+                <marker date="1548265380675" expanded="true" signature="815:820" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+              <folding>
+                <marker date="1548267118897" expanded="true" signature="623:628" ph="..." />
+                <marker date="1548267118897" expanded="true" signature="2438:2447" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.flaskenv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="2" selection-start-line="4" selection-end-line="6" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.flaskenv" />
+        <option value="$PROJECT_DIR$/views.py" />
+        <option value="$PROJECT_DIR$/resources.py" />
+        <option value="$PROJECT_DIR$/api.py" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/routes.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="291" />
+    <option name="y" value="43" />
+    <option name="width" value="1333" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic-flask" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548267179487" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="nvipam-flask-refactored" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="nvipam-flask-refactored" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="nvipam-flask-refactored" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a38d49c2-c2da-48cf-990b-4004d8b3b665" name="Default Changelist" comment="" />
+      <created>1548261058886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548261058886</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="291" y="43" width="1333" height="878" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24906227" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32961586" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.32916054" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.flaskenv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="4" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <marker date="1548265380675" expanded="true" signature="451:456" ph="..." />
+            <marker date="1548265380675" expanded="true" signature="557:562" ph="..." />
+            <marker date="1548265380675" expanded="true" signature="581:590" ph="..." />
+            <marker date="1548265380675" expanded="true" signature="815:820" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <marker date="1548267118897" expanded="true" signature="623:628" ph="..." />
+            <marker date="1548267118897" expanded="true" signature="2438:2447" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javafx.base</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Python 3.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
