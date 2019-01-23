@@ -34,10 +34,8 @@
       <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/PumpkinVraClasses.swift" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/UserPreferencesViewController.swift" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Navigation/Navigation/ViewController.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../corp.local.reddis/.idea/encodings.xml" afterDir="false" />
@@ -317,6 +315,9 @@
       <change afterPath="$PROJECT_DIR$/../vraiconpack" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../vro-change-owner/Change Owner V2.workflow" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../windows-dns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -352,13 +353,13 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="flaskenv" value="18" />
-          <entry key="py" value="708" />
+          <entry key="py" value="871" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="708" />
+          <entry key="Python" value="871" />
         </counts>
       </usages-collector>
     </session>
@@ -369,7 +370,7 @@
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -378,7 +379,7 @@
         <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding>
                 <marker date="1548265380675" expanded="true" signature="451:456" ph="..." />
                 <marker date="1548265380675" expanded="true" signature="557:562" ph="..." />
@@ -392,11 +393,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+            <state relative-caret-position="1485">
+              <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
               <folding>
-                <marker date="1548267118897" expanded="true" signature="623:628" ph="..." />
-                <marker date="1548267118897" expanded="true" signature="2438:2447" ph="..." />
+                <marker date="1548268032884" expanded="true" signature="2356:2365" ph="..." />
               </folding>
             </state>
           </provider>
@@ -430,7 +430,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -468,6 +468,24 @@
               <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-flask" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="basic-flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -475,7 +493,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548267179487" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548268032907" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -665,7 +683,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="43" width="1333" height="878" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -716,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding>
             <marker date="1548265380675" expanded="true" signature="451:456" ph="..." />
             <marker date="1548265380675" expanded="true" signature="557:562" ph="..." />
@@ -729,17 +746,16 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="1485">
+          <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
           <folding>
-            <marker date="1548267118897" expanded="true" signature="623:628" ph="..." />
-            <marker date="1548267118897" expanded="true" signature="2438:2447" ph="..." />
+            <marker date="1548268032884" expanded="true" signature="2356:2365" ph="..." />
           </folding>
         </state>
       </provider>

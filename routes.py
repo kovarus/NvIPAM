@@ -4,22 +4,15 @@ from models import UserModel, RevokedTokenModel
 from flask_jwt_extended import (create_access_token, create_refresh_token, jwt_required, jwt_refresh_token_required, get_jwt_identity, get_raw_jwt)
 
 
-
 parser = reqparse.RequestParser()
 parser.add_argument('username', help = 'This field cannot be blank', required = True)
 parser.add_argument('password', help = 'This field cannot be blank', required = True)
 
 
-@api.route('/hello')
-class HelloWorld(Resource):
-    def get(self):
-        return {'hello': 'world'}
-
-
-@api.route('/test')
-class TestRoute(Resource):
-    def get(self):
-        return {'This': 'Is a test'}
+''' 
+Not really sure if we need this.  
+Will leave it until a default user / password is created when the db is initiated
+'''
 
 
 @api.route('/registration')
@@ -104,13 +97,7 @@ class TokenRefresh(Resource):
         return {'access_token': access_token}
 
 
-@api.route('/users')
-class AllUsers(Resource):
-    def get(self):
-        return UserModel.return_all()
-
-    def delete(self):
-        return UserModel.delete_all()
+''' sample protected route'''
 
 
 @api.route('/secret')
