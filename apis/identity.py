@@ -1,48 +1,31 @@
-from run import api
-from flask_restplus import Resource, reqparse
+# from run import api
+from flask_restplus import Resource, Namespace, reqparse, fields
 from models import UserModel, RevokedTokenModel
 from flask_jwt_extended import (create_access_token, create_refresh_token, jwt_required, jwt_refresh_token_required, get_jwt_identity, get_raw_jwt)
 
+api = Namespace('identity', description='identity related operations')
 
 parser = reqparse.RequestParser()
 parser.add_argument('username', help = 'This field cannot be blank', required = True)
 parser.add_argument('password', help = 'This field cannot be blank', required = True)
 
+''' adding models for marshalling '''
+
+class AuthDto:
+    user_auth = api.model('user_details', {
+        'username':fields.String(required=True, description="The username"),
+        'password': fields.String(required=True, description='User password')
+    })
+
 
 ''' 
-Not really sure if we need this.  
-Will leave it until a default user / password is created when the db is initiated
+Update - added default user in run.py (admin/VMware1!)
 '''
-
-
-@api.route('/registration')
-class UserRegistration(Resource):
-    def post(self):
-        data = parser.parse_args()
-
-        if UserModel.find_by_username(data['username']):
-            return {'message': 'User {} already exists'.format(data['username'])}
-
-        new_user = UserModel(
-            username = data['username'],
-            password = UserModel.generate_hash(data['password'])
-        )
-
-        try:
-            new_user.save_to_db()
-            access_token = create_access_token(identity = data['username'])
-            refresh_token = create_refresh_token(identity = data['username'])
-            return {
-                'message': 'User {} was created'.format(data['username']),
-                'access_token': access_token,
-                'refresh_token': refresh_token
-            }
-        except:
-            return {'message': 'Something went wrong'}, 500
 
 
 @api.route('/login')
 class UserLogin(Resource):
+    @api.expect(AuthDto.user_auth)
     def post(self):
         data = parser.parse_args()
         current_user = UserModel.find_by_username(data['username'])
