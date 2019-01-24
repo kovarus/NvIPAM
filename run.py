@@ -30,11 +30,11 @@ def check_if_token_in_blacklist(decrypted_token):
 def create_tables():
     db.create_all()
     ''' Add default user account'''
-    existingUser = models.UserModel.find_by_username('admin')
+    existingUser = identity_model.UserModel.find_by_username('admin')
     if not existingUser:
-        new_user = models.UserModel(
+        new_user = identity_model.UserModel(
             username = 'admin',
-            password = models.UserModel.generate_hash('VMware1!')
+            password = identity_model.UserModel.generate_hash('VMware1!')
         )
         new_user.save_to_db()
     '''
@@ -47,10 +47,23 @@ def create_tables():
             new_user.save_to_db()
     '''
 
-import models
-from apis.identity import api as identity_ns
 
+from models import identity_model
+from routes.cmdb_route import api as cmdb_ns
+from routes.ip_assignment_route import api as assignment_ns
+from routes.identity_route import api as identity_ns
+from routes.globalConfig import api as settings_ns
+from routes.tags_route import api as tags_ns
+from routes.networks_route import api as networks_ns
+from routes.network_pool_route import api as network_pools_ns
+
+api.add_namespace(cmdb_ns)
 api.add_namespace(identity_ns)
+api.add_namespace(assignment_ns)
+api.add_namespace(networks_ns)
+api.add_namespace(network_pools_ns)
+api.add_namespace(settings_ns)
+api.add_namespace(tags_ns)
 
 
 if __name__ == '__main__':

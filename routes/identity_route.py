@@ -1,6 +1,6 @@
 # from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-from models import UserModel, RevokedTokenModel
+from models.identity_model import UserModel, RevokedTokenModel
 from flask_jwt_extended import (create_access_token, create_refresh_token, jwt_required, jwt_refresh_token_required, get_jwt_identity, get_raw_jwt)
 
 api = Namespace('identity', description='identity related operations')
@@ -81,12 +81,12 @@ class TokenRefresh(Resource):
 
 
 ''' sample protected route'''
-
-
-@api.route('/secret')
-class SecretResource(Resource):
-    @jwt_required
-    def get(self):
-        return {
-            'answer': 42
-        }
+#
+#
+# @api.route('/secret')
+# class SecretResource(Resource):
+#     @jwt_required
+#     def get(self):
+#         return {
+#             'answer': 42
+#         }
