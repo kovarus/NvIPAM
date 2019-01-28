@@ -1,13 +1,11 @@
 # from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-from models.identity_model import UserModel, RevokedTokenModel
+from flask import request
+from models.cmdb_model import CmdbSchema, CmdbData
 from flask_jwt_extended import jwt_required
+from service.cmdb_service import get_all_cis, save_new_ci, get_a_ci, update_a_ci
 
 api = Namespace('cmdb', description='CMDB related operations')
-
-parser = reqparse.RequestParser()
-parser.add_argument('username', help = 'This field cannot be blank', required = True)
-parser.add_argument('password', help = 'This field cannot be blank', required = True)
 
 ''' adding models for marshalling '''
 
@@ -24,30 +22,36 @@ class CmdbDto:
         'os': fields.String(description='Operating System'),
         'datacenter': fields.String(description='Datacenter serving machine')
     })
+# jwt_required
 
 
 @api.route('/')
 class GetCmdbs(Resource):
     @jwt_required
+    @api.marshal_list_with(CmdbDto.cmdb, envelope='data')
     def get(self):
-        return {'Assignments': 'Get all configuration items'}
+        return get_all_cis()
 
     @jwt_required
     @api.expect(CmdbDto.cmdb)
     def post(self):
-        return {'Assignment': 'Add IP assignment'}
+        data = request.json
+        return save_new_ci(data=data)
 
 
 @api.route('/<id>')
 class GetCmdb(Resource):
     @jwt_required
+    @api.marshal_list_with(CmdbDto.cmdb, envelope='data')
     def get(self, id):
-        return {'Assignment': 'Get configuration item by id'}
+        return get_a_ci(id)
 
     @jwt_required
     @api.expect(CmdbDto.cmdb)
     def put(self,id):
-        return {'Assignment': 'Update a configuration item by id'}
+        data = request.json
+        # print (data)
+        return update_a_ci(id, data)
 
 
 
