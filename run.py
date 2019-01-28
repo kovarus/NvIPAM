@@ -17,6 +17,8 @@ app.config['SECRET_KEY'] = 'some-secret-string'
 app.config['ADMIN_PASSWORD'] = 'VMware1!'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1)
 
+app.url_map.strict_slashes = False
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
@@ -52,7 +54,7 @@ def create_tables():
     '''
 
 
-from models import identity_model
+from models import identity_model, network_model
 from routes.pdns_route import api as pdns_ns
 from routes.cmdb_route import api as cmdb_ns
 from routes.ip_assignment_route import api as assignment_ns
