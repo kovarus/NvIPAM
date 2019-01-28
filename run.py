@@ -2,6 +2,9 @@ from flask import Flask
 from flask_restplus import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
+from flask_migrate import Migrate
+# import time
+import datetime
 
 
 app = Flask(__name__)
@@ -12,13 +15,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'some-secret-string'
 app.config['ADMIN_PASSWORD'] = 'VMware1!'
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1)
 
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 jwt = JWTManager(app)
-app.config['JWT_BLACKLIST_ENABLED'] = True
-app.config['JWT_BLACKLIST_TOKEN_CHECKS'] = ['access', 'refresh']
 
+jwt._set_error_handler_callbacks(api)
 
 @jwt.token_in_blacklist_loader
 def check_if_token_in_blacklist(decrypted_token):
@@ -49,6 +53,7 @@ def create_tables():
 
 
 from models import identity_model
+from routes.pdns_route import api as pdns_ns
 from routes.cmdb_route import api as cmdb_ns
 from routes.ip_assignment_route import api as assignment_ns
 from routes.identity_route import api as identity_ns
@@ -58,6 +63,7 @@ from routes.networks_route import api as networks_ns
 from routes.network_pool_route import api as network_pools_ns
 
 api.add_namespace(cmdb_ns)
+api.add_namespace(pdns_ns)
 api.add_namespace(identity_ns)
 api.add_namespace(assignment_ns)
 api.add_namespace(networks_ns)

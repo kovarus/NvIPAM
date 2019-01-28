@@ -35,17 +35,15 @@ class UserLogin(Resource):
 
         if UserModel.verify_hash(data['password'], current_user.password):
             access_token = create_access_token(identity = data['username'])
-            refresh_token = create_refresh_token(identity = data['username'])
             return {
                 'message': 'Logged in as {}'.format(current_user.username),
-                'access_token': access_token,
-                'refresh_token': refresh_token
+                'bearer_token': access_token
             }
         else:
             return {'message': 'Wrong credentials'}
 
 
-@api.route('/logout/access')
+@api.route('/logout')
 class UserLogoutAccess(Resource):
         @jwt_required
         def post(self):
@@ -58,35 +56,3 @@ class UserLogoutAccess(Resource):
                 return {'message': 'Something went wrong'}, 500
 
 
-@api.route('/logout/refresh')
-class UserLogoutRefresh(Resource):
-    @jwt_refresh_token_required
-    def post(self):
-        jti = get_raw_jwt()['jti']
-        try:
-            revoked_token = RevokedTokenModel(jti = jti)
-            revoked_token.add()
-            return {'message': 'Refresh token has been revoked'}
-        except:
-            return {'message': 'Something went wrong'}, 500
-
-
-@api.route('/token/refresh')
-class TokenRefresh(Resource):
-    @jwt_refresh_token_required
-    def post(self):
-        current_user = get_jwt_identity()
-        access_token = create_access_token(identity = current_user)
-        return {'access_token': access_token}
-
-
-''' sample protected route'''
-#
-#
-# @api.route('/secret')
-# class SecretResource(Resource):
-#     @jwt_required
-#     def get(self):
-#         return {
-#             'answer': 42
-#         }
