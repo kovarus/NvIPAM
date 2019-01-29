@@ -1,15 +1,16 @@
 from flask import Flask, Blueprint
-from flask_restplus import Api
+from flask_restplus import Api, Namespace
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
 # import time
 import datetime
 
-
 app = Flask(__name__)
+blueprint = Blueprint('api', __name__, url_prefix='/api/1.0')
+api = Api(blueprint)
+app.register_blueprint(blueprint)
 
-api = Api(app)
 
 ''' Will need to use Postgres if you want to save arrays (disks, nics, etc) '''
 
@@ -23,6 +24,7 @@ app.url_map.strict_slashes = False
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
 
 jwt = JWTManager(app)
 
@@ -65,6 +67,7 @@ from routes.global_settings_route import api as settings_ns
 from routes.tags_route import api as tags_ns
 from routes.networks_route import api as networks_ns
 from routes.networks_pools_route import api as network_pools_ns
+
 
 api.add_namespace(cmdb_ns)
 api.add_namespace(pdns_ns)
