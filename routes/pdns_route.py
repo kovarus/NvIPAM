@@ -21,10 +21,12 @@ class PdnsRecords(Resource):
     #@ api.expect(AuthDto.user_auth)
     @jwt_required
     def get(self):
+        """Get all DNS records"""
         return {'DNS': 'Get DNS records'}
 
     @jwt_required
     def post(self):
+        """Add DNS record"""
         return {'DNS': 'Add DNS Record'}
 
 
@@ -32,13 +34,16 @@ class PdnsRecords(Resource):
 class PdnsRecord(Resource):
     @jwt_required
     def get(self, id):
+        """Get DNS record by id"""
         return {'DNS': 'Get DNS record by id'}
 
     @jwt_required
     def put(self, id):
+        """Update DNS record by id"""
         return {'DNS': 'Update a DNS record by id'}
 
     @jwt_required
     def delete(self, id):
+        """Delete DNS record"""
         return {'DNS': 'Delete a DNS record by id'}
 

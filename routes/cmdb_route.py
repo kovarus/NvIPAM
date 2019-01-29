@@ -28,11 +28,13 @@ class GetCmdbs(Resource):
     @jwt_required
     @api.marshal_list_with(CmdbDto.cmdb, envelope='data')
     def get(self):
+        """Get all configuration items"""
         return get_all_cis()
 
     @jwt_required
     @api.expect(CmdbDto.cmdb)
     def post(self):
+        """Add a new configuration item"""
         data = request.json
         return save_new_ci(data=data)
 
@@ -42,11 +44,13 @@ class GetCmdb(Resource):
     @jwt_required
     @api.marshal_list_with(CmdbDto.cmdb, envelope='data')
     def get(self, id):
+        """Get CI by id"""
         return get_a_ci(id)
 
     @jwt_required
     @api.expect(CmdbDto.cmdb)
     def put(self,id):
+        """Update a CI by id"""
         data = request.json
         # print (data)
         return update_a_ci(id, data)

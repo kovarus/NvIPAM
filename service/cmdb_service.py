@@ -84,4 +84,4 @@ def update_a_ci(id, data):
     ci_schema = CmdbSchema()
     output = ci_schema.dump(ci).data
     #
-    return jsonify({'data': output})
+    return output

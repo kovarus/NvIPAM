@@ -31,7 +31,8 @@ def get_all_tags():
     all_tags = Tags.query.all()
     tags_schema = TagsSchema(many=True)
     output = tags_schema.dump(all_tags).data
-    return jsonify({'data': output})
+    # return jsonify({'data': output})
+    return output
 
     # return Tags.query.all()
 
@@ -51,7 +52,7 @@ def update_a_tag(tag_id, data):
     db.session.commit()
     tag_schema = TagsSchema()
     output = tag_schema.dump(tag).data
-    return jsonify({'data': output})
+    return output
 
 
 def delete_tag(id):

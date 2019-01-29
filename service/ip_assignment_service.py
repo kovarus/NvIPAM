@@ -1,20 +1,22 @@
 from run import db
 from utils import save_changes
-from models.network_model import Networks, NetworksSchema, Tags, TagsSchema
+from models.network_model import Tags, TagsSchema, PoolAssignmentsSchema, PoolAssignments
 from flask import jsonify
 
-def save_new_network(data):
-    network = Networks.query.filter_by(key=data['key']).first()
-    if not network:
-        new_network = Networks(
-            id=None,
-            key=data['key'],
-            networkname=data['networkname'],
-            vlanid=data['vlanid'],
-            datacenter=data['datacenter'],
-            cluster=data['cluster']
+
+
+def save_new_assignment(data):
+    # see if the machine name already exists, add if not.
+
+    assignment = PoolAssignments.query.filter_by(machinename=data['machinename']).first()
+    if not assignment:
+        new_assignment = PoolAssignments(
+            id=data['id'],
+            machinename=data['machinename'],
+            status=data['status'],
+            ipaddress=data['ipaddress']
         )
-        save_changes(new_network)
+        save_changes(new_assignment)
         response_object = {
             'status': 'success',
             'message': 'Successfully added.'
@@ -23,12 +25,12 @@ def save_new_network(data):
     else:
         response_object = {
             'status': 'fail',
-            'message': 'Network already exists. Please Log in.',
+            'message': 'Network pool already exists.',
         }
         return response_object, 409
 
 
-def get_all_networks():
+def get_all_assignments():
     # parser = reqparse.RequestParser()
     # parser.add_argument('filter', help='Filter using sql where commands')
     # args = parser.parse_args()
@@ -36,86 +38,66 @@ def get_all_networks():
     #     print(args['filter'])
     #     filter_by = args['filter']
     #     print(filter_by)
-    #     return Networks.query.filter(filter_by).all()
+    #     return PoolAssignments.query.filter(filter_by).all()
+    ips = PoolAssignments.query.all()
+    ip_schema = PoolAssignmentsSchema(many=True)
+    output = ip_schema.dump(ips).data
+    return output
 
 
-    # return Networks.query.all()
-    # network =  Networks.query.filter_by(id=id).first()
-    network = Networks.query.all()
-    net_schema = NetworksSchema(many=True)
-    output = net_schema.dump(network).data
-    # print(output)
-    return jsonify({'data': output})
+def get_an_assignment(id):
+    pool = PoolAssignments.query.filter_by(id=id).first()
+    pool_schema = PoolAssignmentsSchema()
+    output = pool_schema.dump(pool).data
+    return output
 
 
-def get_a_network(id):
-    network = Networks.query.filter_by(id=id).first()
-    net_schema = NetworksSchema()
-    output = net_schema.dump(network).data
-    print(output)
-    return jsonify({'data': output})
+def update_an_assignent(id, data):
+    ''' update an IP assignment item '''
+    assignment = PoolAssignments.query.get(id)
 
-    # return Networks.query.filter_by(id=id).first()
+    if data['machinename'] != 'string':
+        assignment.machinename = data['machinename']
 
-
-def update_a_network(id, data):
-    ''' update a network item '''
-    net = Networks.query.get(id)
-    if data['key'] != 'string':
-        net.key = data['key']
-
-    if data['networkname'] != 'string':
-        net.networkname = data['networkname']
-
-    if data['vlanid'] != 'string':
-        net.vlanid = data['vlanid']
-
-    if data['datacenter'] != 'string':
-        net.datacenter = data['datacenter']
-
-    if data['cluster'] != 'string':
-        net.cluster = data['cluster']
+    ''' 0 - unused, 1 - reserved, 2 - used, 3 - gateway'''
+    if data['status'] == 0:
+        assignment.status = data['status']
+        ''' delete the hostname if setting to unused '''
+        assignment.machinename = 'string'
+    else:
+        assignment.status = data['status']
 
     ''' apply the changes '''
     db.session.commit()
-    net_schema = NetworksSchema()
-    output = net_schema.dump(net).data
-    return jsonify({'data': output})
+    net_schema = PoolAssignmentsSchema()
+    output = net_schema.dump(assignment).data
+    return output
 
 
-def get_network_tags(id):
-    network = Networks.query.filter_by(id=id).first()
-    tags = network.network_tag
-    net_schema = TagsSchema(many=True)
-    output = net_schema.dump(tags).data
-    return jsonify({'data': output})
+def get_assignment_tags(id):
+    assignment = PoolAssignments.query.filter_by(id=id).first()
+    tags = assignment.assignment_tag
+    assignment_schema = TagsSchema(many=True)
+    output = assignment_schema.dump(tags).data
+    return output
 
 
-def add_network_tag(id, data):
-    net = Networks.query.get(id)
+def add_assignment_tag(id, data):
+    assignment = PoolAssignments.query.get(id)
     tag = Tags.query.get(data['tag_id'])
-    net.network_tag.append(tag)
-    net_schema=NetworksSchema()
-    output = net_schema.dump(net).data
+    assignment.assignment_tag.append(tag)
+    assignment_schema=TagsSchema()
+    output = assignment_schema.dump(assignment).data
     db.session.commit()
-    return jsonify({'data': output})
+    return output
 
 
-def delete_network_tag(id, data):
-    net = Networks.query.get(id)
+def delete_assignment_tag(id, data):
+    assignment = PoolAssignments.query.get(id)
     tag = Tags.query.get(data['tag_id'])
-    # net.network_tag.delete(tag, synchronize_session=False)
-    net.network_tag.remove(tag)
-    net_schema=NetworksSchema()
-    output = net_schema.dump(net).data
+    assignment.assignment_tag.remove(tag)
+    assignment_schema=PoolAssignmentsSchema()
+    output = assignment_schema.dump(assignment).data
     db.session.commit()
-    return jsonify({'data': output})
+    return output
 
-
-def get_first_free(net_id, pool_id):
-    ''' need to return ip, mask, gateway, dns1, dns2, and domainname '''
-    return jsonify({'in': 'progress'})
-
-
-def claim_first_free(net_id, pool_id):
-    return jsonify({'in': 'progress'})

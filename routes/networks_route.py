@@ -27,11 +27,13 @@ class GetNetworks(Resource):
     @jwt_required
     # @api.marshal_list_with(NetworksDto.network, envelope='data')
     def get(self):
+        """Get all networks"""
         return get_all_networks()
 
     @jwt_required
     @api.expect(NetworksDto.network)
     def post(self):
+        """Add new network"""
         data = request.json
         return save_new_network(data)
 
@@ -40,11 +42,13 @@ class GetNetworks(Resource):
 class GetNetwork(Resource):
     @jwt_required
     def get(self, id):
+        """Get network by id"""
         return get_a_network(id)
 
     @jwt_required
     @api.expect(NetworksDto.network)
     def put(self,id):
+        """Update a network by id"""
         data = request.json
         return update_a_network(id, data)
 

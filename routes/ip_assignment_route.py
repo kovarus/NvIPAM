@@ -1,7 +1,13 @@
 from flask_restplus import Resource, Namespace, reqparse, fields
 from flask_jwt_extended import jwt_required
+from service.ip_assignment_service import save_new_assignment, get_assignment_tags, get_an_assignment, get_all_assignments, delete_assignment_tag \
+    , add_assignment_tag, update_an_assignent
+from flask import request
+from routes.tags_route import TagsDto
 
 api = Namespace('ip_assignment', description='IP assignment related operations')
+
+_tags = TagsDto.tags
 
 
 ''' adding models for marshalling '''
@@ -21,26 +27,53 @@ class IpAddressDto:
 class GetAssignments(Resource):
     @jwt_required
     def get(self):
-        return {'Assignments': 'Get all IP assignments'}
+        """Get all IP assignments"""
+        return get_all_assignments()
 
-    @jwt_required
-    @api.expect(IpAddressDto.assignment)
-    def post(self):
-        return {'Assignment': 'Add IP assignment'}
+''' Not sure if this fits.  All addresses automatically added when you create the pool '''
+    # @jwt_required
+    # @api.expect(IpAddressDto.assignment)
+    # def post(self):
+    #     """Add new IP assignment"""
+    #     data = request.json
+    #     return save_new_assignment(data)
 
 
 @api.route('/<id>')
 class GetIpAssignment(Resource):
     @jwt_required
     def get(self, id):
-        return {'Assignment': 'Get IP assignment by id'}
+        """Get IP assignment by id"""
+        return get_an_assignment(id)
 
     @jwt_required
     @api.expect(IpAddressDto.assignment)
     def put(self,id):
-        return {'Assignment': 'Update a IP assignment by id'}
+        """Update ip assignment by ip"""
+        data = request.json
+        return update_an_assignent(id, data)
 
 
+@api.route('/<id>/tags')
+class AssignmentTags(Resource):
+    @jwt_required
+    def get(self, id):
+        """Get a address tags given its identifier"""
+        return get_assignment_tags(id)
+
+    @api.expect(_tags, validate=True)
+    @jwt_required
+    def post(self, id):
+        """Updates a address Tag """
+        data = request.json
+        return add_assignment_tag(id, data)
+
+    @api.expect(_tags, validate=True)
+    @jwt_required
+    def delete(self, id):
+        """Updates an IP assignment Tag """
+        data = request.json
+        return delete_assignment_tag(id=id, data=data)
 
 
 

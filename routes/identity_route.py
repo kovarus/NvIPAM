@@ -28,6 +28,7 @@ Update - added default user in run.py (admin/VMware1!)
 class UserLogin(Resource):
     @api.expect(AuthDto.user_auth)
     def post(self):
+        """Request Bearer token"""
         data = parser.parse_args()
         current_user = UserModel.find_by_username(data['username'])
 
@@ -48,6 +49,7 @@ class UserLogin(Resource):
 class UserLogoutAccess(Resource):
         @jwt_required
         def post(self):
+            """Release Bearer token"""
             jti = get_raw_jwt()['jti']
             try:
                 revoked_token = RevokedTokenModel(jti = jti)
