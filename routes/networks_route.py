@@ -1,7 +1,5 @@
-# from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-from service.networks_service import save_new_network, get_all_networks, get_a_network, update_a_network, \
-    get_network_tags, add_network_tag, delete_network_tag
+from service.networks_service import save_new_network, get_all_networks, get_a_network, update_a_network, get_network_tags, add_network_tag, delete_network_tag
 from routes.tags_route import TagsDto
 from flask_jwt_extended import jwt_required
 from flask import request

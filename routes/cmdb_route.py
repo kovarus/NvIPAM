@@ -1,7 +1,5 @@
-# from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
 from flask import request
-from models.cmdb_model import CmdbSchema, CmdbData
 from flask_jwt_extended import jwt_required
 from service.cmdb_service import get_all_cis, save_new_ci, get_a_ci, update_a_ci
 

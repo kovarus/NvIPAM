@@ -56,22 +56,22 @@ def create_tables():
     '''
 
 
-from .models import identity_model
-from .routes.pdns_route import api as pdns_ns
-from .routes.cmdb_route import api as cmdb_ns
-from .routes.ip_assignment_route import api as assignment_ns
-from .routes.identity_route import api as identity_ns
-from .routes.globalConfig import api as settings_ns
-from .routes.tags_route import api as tags_ns
-from .routes.networks_route import api as networks_ns
-from .routes.network_pool_route import api as network_pools_ns
+from models import identity_model
+from routes.pdns_route import api as pdns_ns
+from routes.cmdb_route import api as cmdb_ns
+from routes.ip_assignment_route import api as assignment_ns
+from routes.identity_route import api as identity_ns
+from routes.globalConfig import api as settings_ns
+from routes.tags_route import api as tags_ns
+from routes.networks_route import api as networks_ns
+from routes.network_pool_route import api as network_pools_ns
 
 api.add_namespace(cmdb_ns)
 api.add_namespace(pdns_ns)
 api.add_namespace(identity_ns)
 api.add_namespace(assignment_ns)
 api.add_namespace(networks_ns)
-api.add_namespace(network_pools_ns)
+# api.add_namespace(network_pools_ns)
 api.add_namespace(settings_ns)
 api.add_namespace(tags_ns)
 

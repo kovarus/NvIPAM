@@ -3,7 +3,6 @@ Routes for tagging service
 '''
 from flask import request
 from service.tags_service import save_new_tag, get_all_tags, get_a_tag, update_a_tag, delete_tag
-from models.network_model import TagsSchema, Tags
 from flask_restplus import Resource, Namespace, reqparse, fields
 from flask_jwt_extended import jwt_required
 
@@ -25,7 +24,7 @@ class GetTags(Resource):
     @jwt_required
     @api.marshal_list_with(TagsDto.tags, envelope='data')
     def get(self):
-        return Tags.query.all()
+        return get_all_tags()
 
     @jwt_required
     @api.expect(TagsDto.tags)

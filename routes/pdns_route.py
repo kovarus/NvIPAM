@@ -1,7 +1,4 @@
-# from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-# from models.identity_model import UserModel, RevokedTokenModel
-# from ..models.identity_model import UserModel, RevokedTokenModel
 from flask_jwt_extended import jwt_required
 
 api = Namespace('dns', description='DNS related operations')
