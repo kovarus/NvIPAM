@@ -1,8 +1,6 @@
 from run import db
 from utils import save_changes
 from models.network_model import Networks, NetworkPools, PoolAssignmentsSchema, PoolAssignments, PoolsSchema, TagsSchema
-# from routes.network_pool_route import NetworkPoolsDto
-# from routes.tags_route import TagsDto
 from routes.tags_route import TagsDto
 from routes.network_pool_route import NetworkPoolsDto
 
