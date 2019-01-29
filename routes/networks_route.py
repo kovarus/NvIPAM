@@ -1,13 +1,14 @@
 # from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-from models.identity_model import UserModel, RevokedTokenModel
+from service.networks_service import save_new_network, get_all_networks, get_a_network, update_a_network, \
+    get_network_tags, add_network_tag, delete_network_tag
+from routes.tags_route import TagsDto
 from flask_jwt_extended import jwt_required
+from flask import request
 
 api = Namespace('networks', description='Networks related operations')
 
-parser = reqparse.RequestParser()
-parser.add_argument('username', help = 'This field cannot be blank', required = True)
-parser.add_argument('password', help = 'This field cannot be blank', required = True)
+_tags = TagsDto.tags
 
 ''' adding models for marshalling '''
 
@@ -26,26 +27,53 @@ class NetworksDto:
 @api.route('/')
 class GetNetworks(Resource):
     @jwt_required
+    # @api.marshal_list_with(NetworksDto.network, envelope='data')
     def get(self):
-        return {'Networks': 'Get all networks'}
+        return get_all_networks()
 
     @jwt_required
     @api.expect(NetworksDto.network)
     def post(self):
-        return {'Network': 'Add network'}
+        data = request.json
+        return save_new_network(data)
 
 
 @api.route('/<id>')
 class GetNetwork(Resource):
     @jwt_required
     def get(self, id):
-        return {'Network': 'Get network by id'}
+        return get_a_network(id)
 
     @jwt_required
     @api.expect(NetworksDto.network)
     def put(self,id):
-        return {'Network': 'Update a network by id'}
+        data = request.json
+        return update_a_network(id, data)
 
+@api.route('/<id>/tags')
+class NetworkTags(Resource):
+    @jwt_required
+    @api.expect(_tags)
+    def get(self, id):
+        """Get a network tags given its identifier"""
+        tags = get_network_tags(id)
+        if not tags:
+            api.abort(404)
+        else:
+            return get_network_tags(id)
+
+    @api.expect(_tags)
+    @jwt_required
+    def post(self, id):
+        """Updates a Network Tag """
+        data = request.json
+        return add_network_tag(id, data)
+
+    @jwt_required
+    @api.expect(_tags)
+    def delete(self, id):
+        data = request.json
+        return delete_network_tag(id, data)
 
 
 

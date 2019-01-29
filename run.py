@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, Blueprint
 from flask_restplus import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
@@ -8,6 +8,7 @@ import datetime
 
 
 app = Flask(__name__)
+
 api = Api(app)
 
 ''' Will need to use Postgres if you want to save arrays (disks, nics, etc) '''

@@ -1,13 +1,12 @@
-# from run import api
 from flask_restplus import Resource, Namespace, reqparse, fields
-from models.identity_model import UserModel, RevokedTokenModel
+from service.network_pools_service import save_new_pool, get_all_pools, get_a_pool, update_a_pool, \
+    get_pool_tags, add_pool_tag, delete_pool_tag, get_first_free, claim_first_free
+from route.network_route import TagsDto, PoolAssignmentDto
 from flask_jwt_extended import jwt_required
+from flask import request
 
 api = Namespace('pools', description='Network pool related operations')
 
-parser = reqparse.RequestParser()
-parser.add_argument('username', help = 'This field cannot be blank', required = True)
-parser.add_argument('password', help = 'This field cannot be blank', required = True)
 
 ''' adding models for marshalling '''
 
@@ -26,30 +25,104 @@ class NetworkPoolsDto:
     })
 
 
-@api.route('/')
-class GetPools(Resource):
-    @jwt_required
-    def get(self):
-        return {'Pools': 'Get all network pools'}
+api = NetworkPoolsDto.api
+_pool = NetworkPoolsDto.pool
+_tags = TagsDto.tags
+_assignments = PoolAssignmentDto.pool
 
+
+@api.route('/')
+class PoolsList(Resource):
+    @api.doc('list_of_pools')
     @jwt_required
-    @api.expect(NetworkPoolsDto.pool)
+    # @api.marshal_list_with(_pool, envelope='data')
+    # @api.response(401, 'Provide a valid token')
+    # @token_required
+    def get(self):
+        """List all pools"""
+        return get_all_pools()
+
+    @api.doc('create a new pool')
+    @api.expect(_pool, validate=True)
+    # @token_required
     def post(self):
-        return {'Pool': 'Add pool'}
+        """Creates a new network pool """
+        data = request.json
+        return save_new_pool(data=data)
 
 
 @api.route('/<id>')
-class GetNetworkPool(Resource):
+class PoolDetails(Resource):
+    @jwt_required
+    @api.doc('get a pool')
+    def get(self, id):
+        """Get a network pool given its identifier"""
+        pool = get_a_pool(id)
+        if not pool:
+            api.abort(404)
+        else:
+            return pool
+
+    @api.doc('update a Network')
+    @api.expect(_pool, validate=True)
+    @jwt_required
+    def put(self, id):
+        """Creates a new Configuration Item """
+        data = request.json
+        return update_a_pool(id=id, data=data)
+
+
+@api.route('/<id>/tags')
+@api.param('id', 'The Pool identifier')
+class PoolTags(Resource):
+    @api.doc('get pool tags')
     @jwt_required
     def get(self, id):
-        return {'Pool': 'Get network pool by id'}
+        """Get a pool tags given its identifier"""
+        tags = get_pool_tags(id)
+        if not tags:
+            api.abort(404)
+        else:
+            return get_pool_tags(id)
 
+    @api.doc('update a pool tag')
+    @api.expect(_tags, validate=True)
     @jwt_required
-    @api.expect(NetworkPoolsDto.pool)
-    def put(self,id):
-        return {'Pool': 'Update a network pool by id'}
+    def post(self, id):
+        """Updates a Pool Tag """
+        data = request.json
+        return add_pool_tag(id, data)
+
+    @api.doc('update a Pool')
+    @api.expect(_tags, validate=True)
+    @api.response(401, 'Provide a valid token')
+    @jwt_required
+    def delete(self, id):
+        """Updates a Network Tag """
+        data = request.json
+        return delete_pool_tag(id, data)
 
 
+@api.route('/getfirstfree/<pool_id>')
+class GetFirstFree(Resource):
+    @api.doc('get first free based on pool id')
+    @jwt_required
+    def get(self, pool_id):
+        """Get a first free from pool by id"""
+        firstFree = get_first_free(pool_id)
+        if not firstFree:
+            api.abort(404)
+        else:
+            return get_first_free(pool_id)
 
-
+    @api.expect(_assignments, validate=True)
+    @jwt_required
+    def post(self, pool_id):
+        """Claim the first free from the pool by pool id"""
+        data = request.json
+        firstFree = get_first_free(pool_id)
+        if not firstFree:
+            api.abort(404)
+        else:
+            return claim_first_free(pool_id, data)
 

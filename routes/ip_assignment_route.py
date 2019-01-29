@@ -5,9 +5,6 @@ from flask_jwt_extended import jwt_required
 
 api = Namespace('ip_assignment', description='IP assignment related operations')
 
-parser = reqparse.RequestParser()
-parser.add_argument('username', help = 'This field cannot be blank', required = True)
-parser.add_argument('password', help = 'This field cannot be blank', required = True)
 
 ''' adding models for marshalling '''
 
