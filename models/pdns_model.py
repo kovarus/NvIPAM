@@ -1,6 +1,11 @@
 '''
 
-PDNS model
+PDNS model.
+
+Assuming an existing pdns database.  The intent here is to use the existing Metadata as the model, rather than define
+something new.
+
+Reference: https://docs.sqlalchemy.org/en/latest/orm/extensions/automap.html
 
 '''
 
@@ -12,6 +17,8 @@ from sqlalchemy.ext.automap import automap_base
 
 metadata=MetaData()
 
+
+''' using db.engine rather than creating a new one. '''
 metadata.reflect(db.engine, only=['domains', 'records'])
 
 Base = automap_base(metadata=metadata)
