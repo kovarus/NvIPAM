@@ -14,7 +14,8 @@ app.register_blueprint(blueprint)
 
 ''' Will need to use Postgres if you want to save arrays (disks, nics, etc) '''
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nvipam:VMware1!@localhost/nvipam'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'some-secret-string'
 app.config['ADMIN_PASSWORD'] = 'VMware1!'
