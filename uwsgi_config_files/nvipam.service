@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve nvipam 
+After=network.target
+
+[Service]
+User=nvipam
+Group=nginx
+WorkingDirectory=/home/nvipam/nvipam
+Environment="PATH=/home/nvipam/nvipam/venv/bin"
+ExecStart=/home/nvipam/nvipam/venv/bin/uwsgi --ini nvipam.ini
+
+[Install]
+WantedBy=multi-user.target
