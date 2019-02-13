@@ -1,7 +1,7 @@
 from flask_restplus import Resource, Namespace, reqparse, fields
 from flask_jwt_extended import jwt_required
 from service.ip_assignment_service import save_new_assignment, get_assignment_tags, get_an_assignment, get_all_assignments, delete_assignment_tag \
-    , add_assignment_tag, update_an_assignent
+    , add_assignment_tag, update_an_assignent, find_an_assignment
 from flask import request
 from routes.tags_route import TagsDto
 
@@ -28,7 +28,15 @@ class GetAssignments(Resource):
     @jwt_required
     def get(self):
         """Get all IP assignments"""
+        parser = reqparse.RequestParser()
+        parser.add_argument('ipaddress', type=str, location='args', help='Machine ipaddress')
+        args = parser.parse_args()
+        if args['ipaddress']:
+            filter_by = args['ipaddress']
+            print("Route filter_by " + filter_by)
+            return find_an_assignment(filter_by)
         return get_all_assignments()
+
 
 ''' Not sure if this fits.  All addresses automatically added when you create the pool '''
     # @jwt_required

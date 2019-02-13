@@ -2,7 +2,7 @@ from run import db
 from utils import save_changes
 from models.network_model import Tags, TagsSchema, PoolAssignmentsSchema, PoolAssignments
 from flask import jsonify
-
+from sqlalchemy import text
 
 
 def save_new_assignment(data):
@@ -49,6 +49,14 @@ def get_an_assignment(id):
     pool = PoolAssignments.query.filter_by(id=id).first()
     pool_schema = PoolAssignmentsSchema()
     output = pool_schema.dump(pool).data
+    return output
+
+def find_an_assignment(filter_by):
+    # return PoolAssignments.query.filter(filter_by).all
+    print("Filter_by is" + filter_by)
+    machine = PoolAssignments.query.filter_by(ipaddress=text(filter_by)).first()
+    machine_schema = PoolAssignmentsSchema()
+    output = machine_schema.dump(machine).data
     return output
 
 

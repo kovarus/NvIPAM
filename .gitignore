@@ -3,4 +3,5 @@ venv/
 *.iml
 __pycache__/
 .idea/
+*.sock
 

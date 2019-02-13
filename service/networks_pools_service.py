@@ -68,7 +68,6 @@ def save_new_pool(data):
             domainname = _globalSettings.domainname
         else:
             domainname = data['domainname']
-        print("Owner id is " + net.id)
         new_pool = NetworkPools(
             id=None,
             poolname=newPoolname,
