@@ -1,6 +1,6 @@
 from flask_restplus import Resource, Namespace, reqparse, fields
 from service.pdns_service import get_a_domain, get_a_record, get_domains, get_records, add_a_domain, add_a_record, \
-    update_a_domain, update_a_record, delete_a_record
+    update_a_domain, update_a_record, delete_a_record, find_a_domain
 from flask_jwt_extended import jwt_required
 from flask import request
 
@@ -72,6 +72,21 @@ class PdnsRecord(Resource):
         return {'DNS': 'Delete a DNS record by id'}
 
     ''' Commented some domain management out.  All the routes work. '''
+
+@api.route('/domains')
+class PdnsRecords(Resource):
+    @api.marshal_list_with(DomainsDto.domains, envelope='data')
+    # @jwt_required
+    def get(self):
+        """Get all DNS records"""
+        parser = reqparse.RequestParser()
+        parser.add_argument('name', type=str, location='args', help='Domain name')
+        args = parser.parse_args()
+        if args['name']:
+            filter_by = args['name']
+            print("Domain filter_by " + filter_by)
+            return find_a_domain(filter_by)
+        return get_domains()
 
 @api.route('/domains')
 class PdnsRecords(Resource):

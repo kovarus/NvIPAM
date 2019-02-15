@@ -3,6 +3,7 @@ from run import db
 from utils import save_changes
 from models.pdns_model import Domains, DomainsSchema, Records, RecordsSchema
 from flask import jsonify
+from sqlalchemy import text
 
 
 def get_domains():
@@ -11,6 +12,14 @@ def get_domains():
     myDomains = db.session.query(Domains).all()
     domains_schema = DomainsSchema(many=True)
     output = domains_schema.dump(myDomains).data
+    return output
+
+def find_a_domain(filter_by):
+    # return PoolAssignments.query.filter(filter_by).all
+    print("Filter_by is" + filter_by)
+    domain = db.session.query(Domains).filter_by(name=text(filter_by)).first()
+    domain_schema = DomainsSchema()
+    output = domain_schema.dump(domain).data
     return output
 
 
