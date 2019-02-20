@@ -10,7 +10,7 @@ def save_new_ci(data):
     ci = CmdbData.query.filter_by(machinename=data['machinename']).first()
     if not ci:
         new_assignment = CmdbData(
-            id=data['id'],
+            id=None,
             machinename=data['machinename'],
             ipaddress=data['ipaddress'],
             network=data['network'],
