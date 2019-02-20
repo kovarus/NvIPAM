@@ -117,14 +117,14 @@ def add_a_record(data):
     else:
         response_object = {
             'status': 'fail',
-            'message': 'Network pool already exists.',
+            'message': 'Record already exists.',
         }
         return response_object, 409
 
 
 def delete_a_record(id):
-    record = db.query(Records).get(id)
-    db.delete(Records)(record)
+    record = db.session.query(Records).get(id)
+    db.session.delete(record)
     db.session.commit()
     return jsonify({'data': 'Record deleted'})
 
@@ -153,3 +153,10 @@ def update_a_record(id, data):
 
 
 
+def find_a_record(filter_by):
+    # return PoolAssignments.query.filter(filter_by).all
+    print("Filter_by is" + filter_by)
+    record = db.session.query(Records).filter_by(name=text(filter_by)).first()
+    record_schema = RecordsSchema()
+    output = record_schema.dump(record).data
+    return output
