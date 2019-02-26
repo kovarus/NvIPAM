@@ -73,7 +73,7 @@ While in /root
 
 Open the browser by entering http://{host ip or fqdn}:5000/api/1.0
 
-![Swagger PI](https://github.com/kovarus/NvIPAM/images/swggerApi.jpg)
+Default username & password is `admin` & `VMware1!`
 
 ### License
 BSD 3-Clause License
