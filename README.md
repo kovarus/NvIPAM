@@ -1,6 +1,8 @@
 ## Welcome to NvIAPM
 NvIPAM is an opensource IPAM, DNS, and CMDB solution based on flask restplus.
 
+Unlike legacy IPAM solutions, this one is built from the ground up to be vSphere network aware.  
+
 The original plan was to leverage map the networks from vRealize Automation (vRA) reservation to the selected network.  However after diving into the IPAM SDK it was determined the networks were not being passed in as a variable.
 The workaround (for now) is to map the network name to the pool name to help identify the correct pool when you create a new vRA Network Profile.
 
@@ -11,7 +13,7 @@ It offers the following features;
 * ![Swagger PI](images/swaggerApi.jpg)
 * DNS Authorative and Recursor services leverging PowerDNS
 * Basic CMDB
-* vRealize Automation (vRA) 7.x IPAM enpdpoint and external network IPAM workflow package
+* vRealize Automation (vRA) 7.x IPAM endpoint and external network IPAM workflow package
 * vRA Event Broker Service (EBS) DNS Create and Delete A record workflows
 * vRA EBS CMDB Add and Update CMDB record
 * ![vRO Workflow Package](images/vroWorkflowPackage.jpg)
@@ -27,7 +29,7 @@ This project uses [PowerDNS](https://www.powerdns.com/) authorative and recursor
 
 #### Installation
 
-Deploy or create a CentOS 7 machine using the minimum install
+Deploy or create a CentOS 7 machine using the minimum install.
 
 #### Requirements
 
