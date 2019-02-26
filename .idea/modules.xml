@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/nvipam-flask-refactored.iml" filepath="$PROJECT_DIR$/nvipam-flask-refactored.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NvIPAM.iml" filepath="$PROJECT_DIR$/NvIPAM.iml" />
     </modules>
   </component>
 </project>

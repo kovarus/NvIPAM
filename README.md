@@ -1,37 +1,112 @@
-## Welcome to GitHub Pages
+## Welcome to NvIAPM
+NvIPAM is an opensource IPAM, DNS, and CMDB solution based on flask restplus.
 
-You can use the [editor on GitHub](https://github.com/kovarus/NvIPAM/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The original plan was to leverage map the networks from vRealize Automation (vRA) reservation to the selected network.  However after diving into the IPAM SDK it was determined the networks were not being passed in as a variable.
+The workaround (for now) is to map the network name to the pool name to help identify the correct pool when you create a new vRA Network Profile.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+It offers the following features;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Swagger API
+* ![Swagger PI](images/swggerApi.jpg)
+* DNS Authorative and Recursor services leverging PowerDNS
+* Basic CMDB
+* vRealize Automation (vRA) 7.x IPAM enpdpoint and external network IPAM workflow package
+* vRA Event Broker Service (EBS) DNS Create and Delete A record workflows
+* vRA EBS CMDB Add and Update CMDB record
+* ![vRO Workflow Package](images/vroWorkflowPackage.jpg)
+* vCenter IPAM Integration 
+* ![vCenter 6.7 vRO Integration](images/vCenterIntegration.jpg)
+* PowerShell / PowerCLI to capture the vCenter networks to facilitate populating the database.
+* PostgreSQL backend
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### External software
 
-- Bulleted
-- List
+This project uses [PowerDNS](https://www.powerdns.com/) authorative and recursor to provide delegate or authoritative DNS for a develop environment.
 
-1. Numbered
-2. List
+#### Installation
 
-**Bold** and _Italic_ and `Code` text
+Deploy or create a CentOS 7 machine using the minimum install
 
-[Link](url) and ![Image](src)
-```
+#### Requirements
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The requirements for this project can be install using an Ansible playbook, available at [NvIPAM-Ansible-Install] (https://github.com/kovarus/NvIPAM-Ansible-Install).
 
-### Jekyll Themes
+`yum install -y ansible git`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kovarus/NvIPAM-Ansible-Install/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+`ssh-keygen`
 
-### Support or Contact
+`ssh-copy-id root@localhost`
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+`git clone https://github.com/kovarus/NvIPAM-Ansible-Install.git`
+
+`cd NvIPAM-Ansible-Install`
+
+`ansible-galaxy install -r requirements.yml`
+
+`ansible-playbook -i hosts site.yml`
+
+This will deploy a simple app and configure uwsgi including a Python3.6 venv, located in /home/nvipam/app
+
+The next version of of the installer playbook will deploy a clean NvIPAM environment.
+
+In the meantime, you can play with the api using a debug flask environment.
+
+While in /root
+
+`git clone https://github.com/kovarus/NvIPAM.git`
+
+`cd NvIPAM`
+
+`python3.6 -m venv venv`
+
+`source venv/bin/activate`
+
+`flask db init`
+
+`flask db migrate`
+
+`flask db upgrade`
+
+`flask run`
+
+Open the browser by entering http://{host ip or fqdn}:5000/api/1.0
+
+![Swagger PI](https://github.com/kovarus/NvIPAM/images/swggerApi.jpg)
+
+### License
+BSD 3-Clause License
+
+Copyright (c) 2019, Kovarus
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+### Support or issues
+
+Please look at the [wiki page] (https://github.com/kovarus/NvIPAM/wiki) or submit an [issue] (https://github.com/kovarus/NvIPAM/issues)
