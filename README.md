@@ -8,7 +8,7 @@ The workaround (for now) is to map the network name to the pool name to help ide
 It offers the following features;
 
 * Swagger API
-* ![Swagger PI](images/swggerApi.jpg)
+* ![Swagger PI](images/swaggerApi.jpg)
 * DNS Authorative and Recursor services leverging PowerDNS
 * Basic CMDB
 * vRealize Automation (vRA) 7.x IPAM enpdpoint and external network IPAM workflow package

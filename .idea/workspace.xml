@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e1f238-65b4-4135-b1b9-ae1bdcde8f98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cmdb_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/cmdb_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/global_settings_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/global_settings_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/identity_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/identity_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/network_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/network_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pdns_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pdns_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/cmdb_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cmdb_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/global_settings_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/global_settings_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/identity_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/identity_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/ip_assignment_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ip_assignment_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/networks_pools_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/networks_pools_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/networks_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/networks_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/pdns_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/pdns_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/tags_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tags_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/cmdb_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/cmdb_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/global_settings_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/global_settings_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/ip_assignment_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/ip_assignment_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/networks_pools_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/networks_pools_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/networks_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/networks_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pdns_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/pdns_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/tags_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/tags_service.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,13 +40,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2638" />
+          <entry key="md" value="2639" />
           <entry key="py" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2638" />
+          <entry key="Markdown" value="2639" />
           <entry key="Python" value="92" />
         </counts>
       </usages-collector>
@@ -164,8 +139,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -247,7 +222,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551148774158" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551149017839" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -476,8 +451,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           </first_editor>
           <second_editor />
         </state>
