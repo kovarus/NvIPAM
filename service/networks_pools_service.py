@@ -79,8 +79,6 @@ def save_new_pool(data):
     ''' could figure out gateway using ipaddress.ip_networks().netmask'''
     print(net.networkname)
     if not pool:
-        ''' get global settings '''
-        _globalSettings = GlobalSettings.query.first()
         ''' 
         Prepend the network to the poolname 
         to help with network to pool bind. 
@@ -89,17 +87,17 @@ def save_new_pool(data):
 
         ''' use global defaults if not set in data '''
         if data['dns1'] == 'string':
-            dns1 = _globalSettings.dns1
+            dns1 = None
         else:
             dns1 = data['dns1']
 
         if data['dns2'] == 'string':
-            dns2 = _globalSettings.dns2
+            dns2 = None
         else:
             dns2 = data['dns2']
 
         if data['domainname'] == 'string':
-            domainname = _globalSettings.domainname
+            domainname = None
         else:
             domainname = data['domainname']
         new_pool = NetworkPools(
@@ -116,7 +114,7 @@ def save_new_pool(data):
         )
         save_changes(new_pool)
         ''' populate the assignments table '''
-        result = PopulateAssignmentTable(iprange=data['poolrange'], pool=new_pool, gateway=data['gateway'])
+        # result = PopulateAssignmentTable(iprange=data['poolrange'], pool=new_pool, gateway=data['gateway'])
 
         response_object = {
             'status': 'success',

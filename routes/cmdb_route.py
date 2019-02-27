@@ -54,9 +54,11 @@ class CmdbDto:
         'cpus': fields.Integer(description='Number of CPUs'),
         'disk': fields.Integer(description='HD size in GB'),
         'os': fields.String(description='Operating System'),
-        'datacenter': fields.String(description='Datacenter serving machine')
+        'datacenter': fields.String(description='Datacenter serving machine'),
+        'owner' : fields.String(description='Machine owner, AKA requestedBy'),
+        'status' : fields.Integer(description='Machine status, active = 1, retired = 2')
     })
-# jwt_required
+
 
 
 @api.route('/')
