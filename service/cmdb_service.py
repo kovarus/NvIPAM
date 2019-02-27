@@ -52,7 +52,9 @@ def save_new_ci(data):
             cpus=data['cpus'],
             disk=data['disk'],
             os=data['os'],
-            datacenter=data['datacenter']
+            datacenter=data['datacenter'],
+            owner=data['owner'],
+            status=data['status']
         )
         save_changes(new_assignment)
         response_object = {
@@ -108,10 +110,16 @@ def update_a_ci(id, data):
         ci.mem = data['mem']
 
     if data['disk'] != 0:
-        ci.disk = data['disk']
+            ci.disk = data['disk']
 
     if data['cpus'] != 0:
         ci.disk = data['disk']
+
+    if data['owner'] != 'string':
+        ci.owner = data['owner']
+
+    if data['cpus'] != 0:
+        ci.status = data['status']
 
     # print(output)
     db.session.commit()

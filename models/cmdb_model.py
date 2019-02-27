@@ -54,6 +54,8 @@ class CmdbData(db.Model):
     disk = db.Column(db.Integer)
     os = db.Column(db.String)
     datacenter = db.Column(db.String)
+    owner = db.Column(db.String)
+    status = db.Column(db.Integer)
 
 
 class CmdbSchema(ma.ModelSchema):
