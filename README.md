@@ -31,8 +31,6 @@ This project uses [PowerDNS](https://www.powerdns.com/) authorative and recursor
 
 Deploy or create a CentOS 7 machine using the minimum install.
 
-#### Requirements
-
 The requirements for this project can be install using an Ansible playbook, available at [NvIPAM-Ansible-Install] (https://github.com/kovarus/NvIPAM-Ansible-Install).
 
 `yum install -y ansible git`
@@ -49,33 +47,51 @@ The requirements for this project can be install using an Ansible playbook, avai
 
 `ansible-playbook -i hosts site.yml`
 
-This will deploy a simple app and configure uwsgi including a Python3.6 venv, located in /home/nvipam/app
+### Post installation steps
 
-The next version of of the installer playbook will deploy a clean NvIPAM environment.
+You will need to initialize the DB after the installation, then restart/start the services
 
-In the meantime, you can play with the api using a debug flask environment.
+`su - nvipam`
 
-While in /root
-
-`git clone https://github.com/kovarus/NvIPAM.git`
-
-`cd NvIPAM`
-
-`python3.6 -m venv venv`
+`cd nvipam`
 
 `source venv/bin/activate`
 
+Initialize the db using Flask Migrate
+
 `flask db init`
+
+**Important**
+
+This env.py file excludes the previously created PowerDNS tables.
+
+`copy env.py migrations/env.py`
 
 `flask db migrate`
 
 `flask db upgrade`
 
-`flask run`
+Return to root
+
+`exit`
+
+`systemctl enable nvipam.service`
+
+`systemctl start nvipam.service`
+
+`systemctl restart nginx.service`
 
 Open the browser by entering http://{host ip or fqdn}:5000/api/1.0
 
 Default username & password is `admin` & `VMware1!`
+The response will look like this { "message": "Logged in as admin","bearer_token": "eyJ0eXAiOiJKV1QiLCJhbGciO......}
+
+
+## Header Authentication ##
+
+You will need to add an Authentication Header of Bearer with token retrieved from the previous REST Call.
+
+![Postman Authentication Header](images/bearerToken.jpg)
 
 ### License
 BSD 3-Clause License
